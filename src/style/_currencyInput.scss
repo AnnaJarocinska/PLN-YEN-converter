@@ -1,0 +1,24 @@
+.currencyConverter__fieldset{
+    flex-basis: 100%;
+}
+
+.currencyConverter__fieldset:nth-child(3){
+    margin-top:10px;
+}
+
+.currencyConverter__legend{
+    font-size:28px;
+    text-align: center;
+}
+
+
+.currencyConverter__input{
+    width:100%;
+    font-size: 25px;
+}
+
+@media (orientation:landscape){
+    .currencyConverter__fieldset {
+        flex-basis: 51%;
+    }
+}
