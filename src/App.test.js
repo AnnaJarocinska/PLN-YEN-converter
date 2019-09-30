@@ -1,9 +1,19 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import App from './App';
+import { shallow } from 'enzyme';
+import CurrencyConverter from './components/CurrencyConverter';
+
 
 it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
+  shallow(<App />);
 });
+
+it('includes CurrencyConverter', () => {
+  const app = shallow(<App />);
+  expect(app.containsMatchingElement(<CurrencyConverter />)).toEqual(true)
+});
+
+// it('includes div', () => {
+//   const app = shallow(<App />);
+//   expect(app.containsMatchingElement(<div />)).toEqual(true)
+// });

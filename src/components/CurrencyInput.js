@@ -16,7 +16,7 @@ class CurrencyInput extends React.Component {
         return (
             <>
                 <fieldset className="currencyConverter__fieldset">
-                    <legend className="currencyConverter__legend">currency:{currency} </legend>
+                    <legend className="currencyConverter__legend">currency: {currency} </legend>
                     <input type="number" className="currencyConverter__input" value={value} onChange={this.handleChange} />
                 </fieldset>
             </>
